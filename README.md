@@ -1,22 +1,17 @@
-# 🛩️ AEGIS F16 Sensor Node
+   AEGIS F16 Sensor Node
 
-![AEGIS Banner](photos/banner.jpg)
-
+[AEGIS Banner]
 > **Real-time F16 Mission Control System** — ESP32 sensor data streamed live to AEGIS Dashboard
-
----
-
-## 📸 Project Photos
-
+> 
+ Project Photos
 | Hardware Setup | Serial Monitor | Dashboard |
 |---|---|---|
 | ![Hardware](photos/hardware.jpg) | ![Serial](photos/serial.jpg) | ![Dashboard](photos/dashboard.jpg) |
 
----
 
-## 🔧 Hardware
+  Hardware
 
-![Wiring](photos/wiring.jpg)
+![Wiring]
 
 | Component | Role |
 |---|---|
@@ -25,31 +20,31 @@
 | **BMP180** | Pressure + Altitude |
 | **MPU6050** | G-Force + Gyroscope |
 
----
 
-## 🔌 Wiring
+
+ Wiring
 
 ![Wiring Diagram](photos/wiring_diagram.jpg)
 
 | Sensor | ESP32 Pin | Wire Color |
 |---|---|---|
-| DHT22 VCC | 3.3V | 🔴 Red |
-| DHT22 DATA | GPIO 4 | 🟡 Yellow |
-| DHT22 GND | GND | ⚫ Black |
-| BMP180 SDA | GPIO 21 | 🟢 Green |
-| BMP180 SCL | GPIO 22 | 🔵 Blue |
-| BMP180 VCC | 3.3V | 🔴 Red |
-| BMP180 GND | GND | ⚫ Black |
-| MPU6050 SDA | GPIO 21 | 🟢 Green |
-| MPU6050 SCL | GPIO 22 | 🔵 Blue |
-| MPU6050 VCC | 3.3V | 🔴 Red |
-| MPU6050 GND | GND | ⚫ Black |
+| DHT22 VCC | 3.3V |  Red |
+| DHT22 DATA | GPIO 4 |  Yellow |
+| DHT22 GND | GND |  Black |
+| BMP180 SDA | GPIO 21 |  Green |
+| BMP180 SCL | GPIO 22 |  Blue |
+| BMP180 VCC | 3.3V | Red |
+| BMP180 GND | GND |  Black |
+| MPU6050 SDA | GPIO 21 |  Green |
+| MPU6050 SCL | GPIO 22 |  Blue |
+| MPU6050 VCC | 3.3V |  Red |
+| MPU6050 GND | GND |  Black |
 
-> ⚠️ BMP180 and MPU6050 share the same SDA/SCL — this is normal for I2C !
+>  BMP180 and MPU6050 share the same SDA/SCL — this is normal for I2C !
 
----
 
-## 📚 Libraries Required
+
+ Libraries Required
 
 Install these in **Arduino IDE → Manage Libraries** :
 
@@ -59,19 +54,19 @@ Install these in **Arduino IDE → Manage Libraries** :
 | `Adafruit BMP085 Library` | Adafruit |
 | `MPU6050` | Electronic Cats |
 
----
 
-## 🚀 How to Run
 
-### 1. Upload Arduino Code
+ How to Run
+
+ 1. Upload Arduino Code
 - Open `sketch_apr23a/sketch_apr23a.ino` in Arduino IDE
 - Select board : **ESP32 Dev Module**
 - Select port : **COM3**
 - Click **Upload**
 
-### 2. Verify in Serial Monitor
+ 2. Verify in Serial Monitor
 Open Serial Monitor at **115200 baud** — you should see :
-```
+
 ============================
    AEGIS SENSOR NODE v3.0  
 ============================
@@ -80,28 +75,28 @@ Open Serial Monitor at **115200 baud** — you should see :
 [MPU6050] OK
 [BATTERY] Mode simulation active
 [AEGIS]   TOUS SYSTEMES EN LIGNE
-```
 
-### 3. Launch Python Bridge
-```bash
+
+3. Launch Python Bridge
+ bash
 pip install pyserial
 python aegis_bridge.py
-```
+
 
 You should see :
-```
+
 [AEGIS] ESP32 connecte sur COM3
 [SENSOR] T:24.5C | G:1.02G | Alt:12.3m | B:93.9%
-```
 
-### 4. Open Dashboard
-```
+
+ 4. Open Dashboard
+
 http://localhost:5000/sensors
-```
 
----
 
-## 📡 JSON Data Output
+
+
+📡 JSON Data Output
 
 ```json
 {
@@ -126,7 +121,7 @@ http://localhost:5000/sensors
 
 ---
 
-## ⚠️ AEGIS Alerts
+ AEGIS Alerts
 
 | Alert | Condition |
 |---|---|
@@ -139,7 +134,7 @@ http://localhost:5000/sensors
 
 ---
 
-## 📁 Project Structure
+📁 Project Structure
 
 ```
 AEGIS-F16-Sensor-Node/
@@ -155,12 +150,12 @@ AEGIS-F16-Sensor-Node/
 
 ---
 
-## 👤 Author
+  Author
 
 **eyayahyaoui26-dot**
 - GitHub : [@eyayahyaoui26-dot](https://github.com/eyayahyaoui26-dot)
 
 ---
 
-## 📄 License
+   License
 MIT License — Free to use and modify
