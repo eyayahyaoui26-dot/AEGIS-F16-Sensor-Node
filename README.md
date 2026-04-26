@@ -6,7 +6,7 @@
  Project Photos
 | Hardware Setup | Serial Monitor | Dashboard |
 |---|---|---|
-| ![Hardware](photos/hardware.jpg) | ![Serial](photos/serial.jpg) | ![Dashboard](photos/dashboard.jpg) |
+| ![Hardware] | ![Serial] | ![Dashboard] |
 
 
   Hardware
@@ -24,7 +24,7 @@
 
  Wiring
 
-![Wiring Diagram](photos/wiring_diagram.jpg)
+![Wiring Diagram]
 
 | Sensor | ESP32 Pin | Wire Color |
 |---|---|---|
@@ -66,7 +66,7 @@ Install these in **Arduino IDE → Manage Libraries** :
 
  2. Verify in Serial Monitor
 Open Serial Monitor at **115200 baud** — you should see :
-
+~~~~
 ============================
    AEGIS SENSOR NODE v3.0  
 ============================
@@ -75,7 +75,7 @@ Open Serial Monitor at **115200 baud** — you should see :
 [MPU6050] OK
 [BATTERY] Mode simulation active
 [AEGIS]   TOUS SYSTEMES EN LIGNE
-
+~~~~
 
 3. Launch Python Bridge
  bash
